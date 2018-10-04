@@ -1,0 +1,75 @@
+input,
+textarea,
+select {
+  font-family: $font-family-sans-serif;
+}
+
+.gform_wrapper {
+  .validation_error {
+    font-family: $font-family-sans-serif;
+    border: 0 !important;
+    @extend .alert;
+    @extend .alert-danger;
+    font-weight: 500 !important;
+  }
+  .gform_fields {
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .gfield {
+      padding: 0 !important;
+      .gfield_description {
+        font-family: $font-family-sans-serif;
+        font-weight: 400;
+        padding: 0;
+        @extend .invalid-feedback;
+        display: block;
+      }
+      &.gfield_error {
+        border: 0;
+        background: transparent;
+        input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+        textarea {
+          border-color: $form-feedback-invalid-color;
+        }
+      }
+      .gfield_label {
+        display: none;
+      }
+      .ginput_container {
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          @extend .form-control;
+          padding: .375rem .75rem !important;
+          font-family: $font-family-sans-serif !important;
+        }
+        textarea {
+          height: 95px !important;
+        }
+      }
+    }
+    #field_1_1,
+    #field_1_2 {
+      width: calc(50% - 15px) !important;
+    }
+    #field_1_3,
+    #field_1_4 {
+      width: 100%;
+      padding: 0;
+      max-width: none !important;
+    }
+  }
+  .gform_footer {
+    text-align: right;
+    .gform_button {
+      @extend .btn;
+      @extend .btn-lg;
+      @extend .btn-primary;
+      margin: 0 !important;
+    }
+    .gform_ajax_spinner {
+
+    }
+  }
+}

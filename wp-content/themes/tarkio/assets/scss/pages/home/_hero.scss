@@ -1,0 +1,71 @@
+.home-hero {
+  margin-bottom: -($grid-gutter-width * 3);
+  overflow: hidden;
+  height: 820px;
+  background: $gray-dark;
+  color: $white;
+  padding: $header-height 0;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('assets/img/hero-bg.jpg');
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 221px;
+    background-size: cover;
+    display: block;
+    height: 480px;
+  }
+  &:before {
+    background-image: url('assets/img/bricks-left.png');
+    left: 0;
+    width: 320px;
+  }
+  &:after {
+    background-image: url('assets/img/bricks-right.png');
+    right: 0;
+    width: 254px;
+  }
+  .hero-content {
+    text-align: center;
+    .title {
+      color: $white;
+      font-family: $font-family-display;
+      font-weight: 500;
+      font-size: 75px;
+      letter-spacing: .5px;
+      line-height: 1.125;
+      margin: 0 0 ($grid-gutter-width / 2);
+    }
+    .subtext {
+      margin: 0;
+      font-size: $font-size-27;
+      font-weight: 500;
+    }
+  }
+  .actions {
+    margin-top: ($grid-gutter-width * 1.5);
+    .btn {
+      font-size: $font-size-base;
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: ($grid-gutter-width / 2);
+      }
+    }
+    .link-fact-sheet {
+      color: $white;
+      font-family: $font-family-sans-serif;
+      font-weight: 500;
+      margin-top: $grid-gutter-width;
+      display: inline-block;
+      i {
+        line-height: 1;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+    }
+  }
+}

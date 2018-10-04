@@ -1,0 +1,12 @@
+.page-title {
+  font-family: $font-family-display;
+  font-weight: 700;
+  font-size: $font-size-display;
+  margin: 0 0 ($grid-gutter-width * 2);
+}
+
+.page-template-template-masthead {
+  main {
+    padding-top: 0;
+  }
+}

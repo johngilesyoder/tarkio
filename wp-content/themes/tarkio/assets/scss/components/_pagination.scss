@@ -1,0 +1,9 @@
+.pagination {
+  font-family: $font-family-sans-serif;
+  i {
+    line-height: 1.25;
+    vertical-align: middle;
+    font-size: inherit;
+    transform: translateY(-1px);
+  }
+}

@@ -1,0 +1,39 @@
+.page-template-template-contact {
+  .page-title {
+    margin: 0 0 ($grid-gutter-width / 2);
+  }
+  .subtext {
+    margin: 0 0 ($grid-gutter-width * 2.66);
+    font-size: $font-size-21;
+    // font-weight: 500;
+    p {
+      font-size: $font-size-21;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    a {
+      color: $white;
+      text-decoration: underline;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .methods {
+    margin-top: $grid-gutter-width;
+  }
+  .method-title {
+    @extend .preheader;
+  }
+  .contact-card {
+    background: $gray-100;
+    padding: $grid-gutter-width;
+    p:last-child {
+      margin: 0;
+    }
+  }
+  .contact-form {
+    padding-top: $grid-gutter-width;
+  }
+}

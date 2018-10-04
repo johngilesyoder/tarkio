@@ -1,0 +1,72 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+// Colors
+$gray-100: #F7F7F7;
+$gray-200: #EBEBEB;
+$gray-300: #E3E3E3;
+$gray-400: #D4D4D4;
+$gray-500: #B8B8B8;
+$gray-600: #737678;
+$gray-700: #4D4D4D;
+$gray-800: #363636;
+$gray-900: #242424;
+
+$gray-light:                  $gray-100;
+$gray:                        #444444;
+$gray-dark:                   #1A1F24;
+
+$primary:                     #29755E;
+$primary-inverted:            #19A87D;
+$secondary:                   #8C6932;
+$secondary-inverted:          #D9A44E;
+$tertiary:                    #3C5470;
+
+$green:                       #158F6A;
+$orange:                      #E67335;
+$blue:                        #2282F0;
+
+$body-color:                  #444;
+$headings-color:              $gray-dark;
+
+$yiq-text-dark:               $gray-dark;
+
+
+// Fonts
+$font-family-serif:           Sentinel, Georgia, Times, 'Times New Roman', serif;
+$font-family-sans-serif:      BentonSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-display:         BentonSansCond, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:            $font-family-serif;
+
+$font-size-base:              1.125rem;
+$font-size-12:                ($font-size-base * 0.6666);
+$font-size-13:                ($font-size-base * 0.7222);
+$font-size-14:                ($font-size-base * 0.7778);
+$font-size-15:                ($font-size-base * 0.8333);
+$font-size-16:                ($font-size-base * 0.8889);
+$font-size-21:                ($font-size-base * 1.1667);
+$font-size-24:                ($font-size-base * 1.3333);
+$font-size-27:                ($font-size-base * 1.5);
+$font-size-30:                ($font-size-base * 1.6666);
+$font-size-36:                ($font-size-base * 2);
+$font-size-42:                ($font-size-base * 2.3333);
+$font-size-display:           ($font-size-base * 3.1666);
+
+$headings-font-family:        $font-family-sans-serif;
+$headings-font-weight:        600;
+
+// Forms
+$input-placeholder-color:     $gray-500;
+
+// Buttons
+$btn-border-radius:           0;
+$btn-border-radius-lg:        0;
+$btn-border-radius-sm:        0;
+
+$btn-font-weight:             500;
+
+// Layout
+$header-height:               115px;

@@ -1,0 +1,44 @@
+/*
+Theme Name: Tarkio Fund
+Description: Theme for Tarkio Fund
+Version: 1.0.0
+Author: @johngilesyoder
+Author URI: http://www.twitter.com/johngilesyoder;
+Tags:
+*/
+
+* { -webkit-font-smoothing: antialiased; }
+
+
+@import "utilities/variables";
+
+// Vendor
+@import "../bower_components/bootstrap/scss/bootstrap";
+@import "../bower_components/slick-carousel/slick/slick.scss";
+
+// Utilities
+@import "utilities/fonts";
+@import "utilities/buttons";
+@import "utilities/mixins";
+@import "utilities/wordpress-core";
+@import "utilities/z-index";
+
+// Components
+@import "components/cms-content";
+@import "components/forms";
+
+// Layout
+@import "layout/layout";
+@import "layout/page";
+@import "layout/site-header";
+@import "layout/site-footer";
+
+// Pages
+@import "pages/404";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/home/hero";
+@import "pages/home/fund-overview";
+
+// Vendor
+@import "vendor/modal-video";

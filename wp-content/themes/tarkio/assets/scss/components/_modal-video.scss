@@ -1,0 +1,16 @@
+.home {
+  .modal-video {
+    background: rgba(26,31,36,0.93);
+    .modal-video-body {
+      max-width: 1170px;
+      padding: $grid-gutter-width;
+      .modal-video-movie-wrap {
+        border: 10px solid rgba($gray-dark, .5);
+      }
+      .modal-video-close-btn {
+        top: -45px;
+        right: -45px;
+      }
+    }
+  }
+}

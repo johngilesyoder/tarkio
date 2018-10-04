@@ -1,0 +1,9 @@
+.home-fund-overview {
+  position: relative;
+  z-index: 100;
+  .fund-overview-card {
+    background: $white;
+    padding: $grid-gutter-width;
+    @include elevate;
+  }
+}

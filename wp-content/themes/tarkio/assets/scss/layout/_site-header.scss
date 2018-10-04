@@ -1,0 +1,50 @@
+.site-header {
+  font-family: $font-family-sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  .navbar {
+    padding: $grid-gutter-width 0;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    .site-logo-mark {
+      height: 60px
+    }
+    .site-logo-type {
+      margin-left: 15px;
+      span {
+        display: block;
+      }
+      .company-name {
+        font-family: $font-family-base;
+        font-size: $font-size-30;
+        font-weight: 500;
+        line-height: 1.125;
+        text-transform: uppercase;
+      }
+      .company-managed {
+        font-size: $font-size-12;
+        strong {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      font-size: $font-size-15;
+      font-weight: 500;
+      padding-left: 25px;
+      padding-right: 25px;
+      color: $white;
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
