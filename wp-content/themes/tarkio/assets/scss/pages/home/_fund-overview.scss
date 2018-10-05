@@ -3,7 +3,67 @@
   z-index: 100;
   .fund-overview-card {
     background: $white;
-    padding: $grid-gutter-width;
     @include elevate;
+  }
+  .text-wrapper {
+    display: flex;
+    padding: $grid-gutter-width;
+    .section-title {
+      white-space: nowrap;
+      margin-right: $grid-gutter-width;
+      margin-bottom: 0;
+    }
+  }
+  .metrics {
+    display: flex;
+    .metric {
+      padding: 45px $grid-gutter-width;
+      border-top: 1px solid $border-color;
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-family: $font-family-sans-serif;
+      &:not(:last-child) {
+        border-right: 1px solid $border-color;
+      }
+      .metric-value {
+        font-size: $font-size-36;
+        margin: 0 0 20px;
+        display: flex;
+        font-weight: 700;
+        color: $blue-highlight;
+        line-height: 1;
+        small {
+          font-size: $font-size-16;
+          font-weight: 500;
+          margin: 2px 0 0;
+          text-align: left;
+          line-height: 1;
+        }
+        .value-group {
+          display: flex;
+          & + .value-group {
+            &:before {
+              content: '/';
+              color: $headings-color;
+              margin: 0 10px;
+              font-weight: 400;
+            }
+          }
+          .value-main {
+            margin-right: 10px;
+          }
+        }
+      }
+      .metric-label {
+        color: $headings-color;
+        text-transform: uppercase;
+        display: block;
+        font-size: $font-size-14;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+    }
   }
 }

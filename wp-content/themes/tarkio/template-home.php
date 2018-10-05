@@ -12,7 +12,7 @@
 
     <!-- FSC -->
     <!-- =================================== -->
-    <?php get_template_part( 'includes/home/fsc' ); ?>
+    <?php get_template_part( 'includes/home/fund-advisor' ); ?>
 
     <!-- Performance -->
     <!-- =================================== -->

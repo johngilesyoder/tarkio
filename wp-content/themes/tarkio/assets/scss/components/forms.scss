@@ -5,6 +5,7 @@ select {
 }
 
 .gform_wrapper {
+  margin: 0 !important;
   .validation_error {
     font-family: $font-family-sans-serif;
     border: 0 !important;
@@ -18,6 +19,7 @@ select {
     justify-content: space-between;
     .gfield {
       padding: 0 !important;
+      margin-top: 0 !important;
       .gfield_description {
         font-family: $font-family-sans-serif;
         font-weight: 400;
@@ -61,12 +63,13 @@ select {
     }
   }
   .gform_footer {
-    text-align: right;
+    padding-bottom: 0 !important;
     .gform_button {
       @extend .btn;
       @extend .btn-lg;
       @extend .btn-primary;
       margin: 0 !important;
+      width: 100% !important;
     }
     .gform_ajax_spinner {
 

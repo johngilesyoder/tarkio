@@ -1,0 +1,26 @@
+.home-fund-advisor {
+  .text-wrapper {
+    text-align: center;
+    margin: 0 0 60px;
+  }
+  .preheader {
+    margin: 0 0 10px;
+  }
+  .fund-advisor-card {
+    margin-top: 85px;
+    background: $white;
+    @include elevate;
+    padding: $grid-gutter-width;
+  }
+  .fsc-logo {
+    margin: -30px auto;
+    transform: translateY(-50%);
+    background: $white;
+    width: 420px;
+    border-radius: 10px 10px 0 0;
+    padding: 20px $grid-gutter-width;
+    img {
+      width: 100%;
+    }
+  }
+}

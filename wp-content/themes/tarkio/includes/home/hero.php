@@ -1,7 +1,7 @@
 <section class="home-hero">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-8">
+      <div class="col-md-10 col-xl-8">
         <div class="hero-content">
           <h2 class="title">The Tarkio Fund</h2>
           <p class="subtext">Managed by Front Street Capital Management, The Tarkio Fund (TARKX) is a no load mutual fund with a 1.00% management fee and an initial investment minimum as low as $1,000.</p>

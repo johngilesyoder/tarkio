@@ -8057,6 +8057,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/fsc-logo.png": {
+		"ft": 32768,
+		"iS": 59829,
+		"oA": 0,
+		"oAP": "/assets/img/fsc-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/hero-bg.jpg": {
 		"ft": 16384,
 		"iS": 217783,
@@ -8959,6 +8970,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/pages/home/_disclaimer.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/home/_disclaimer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/home/_fund-advisor.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/home/_fund-advisor.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/pages/home/_fund-overview.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -8981,6 +9018,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/pages/home/_hero.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/home/_performance.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/home/_performance.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9197,6 +9247,20 @@
 		"oAP": "/includes/header-nav.php",
 		"oF": 0
 		},
+	"/includes/home/disclaimer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/disclaimer.php",
+		"oF": 0
+		},
+	"/includes/home/fund-advisor.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/fund-advisor.php",
+		"oF": 0
+		},
 	"/includes/home/fund-overview.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -9209,6 +9273,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "/includes/home/hero.php",
+		"oF": 0
+		},
+	"/includes/home/performance.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/performance.php",
 		"oF": 0
 		},
 	"/includes/page-masthead.php": {

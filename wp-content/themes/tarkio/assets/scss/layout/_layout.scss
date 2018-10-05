@@ -7,8 +7,8 @@ body {
 }
 
 .no-scroll {
-  overflow-y: hidden !important;
-  height: 100% !important;
+  overflow-y: hidden;
+  height: 100%;
   min-height: 0;
   display: block !important;
   position: fixed;
@@ -20,13 +20,16 @@ body {
 
 main {
   padding: ($grid-gutter-width * 2) 0;
+  @include media-breakpoint-down(sm) {
+    padding: $grid-gutter-width 0;
+  }
 }
 
 .container-fluid {
   @include media-breakpoint-up(xs) {
     padding: 0 ($grid-gutter-width / 2);
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     padding: 0 $grid-gutter-width;
   }
   @include media-breakpoint-up(lg) {
@@ -45,12 +48,19 @@ main {
   letter-spacing: 1px;
   text-transform: uppercase;
   display: block;
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-12;
+    margin: 0 0 5px;
+  }
 }
 
 .card-title {
   font-family: $font-family-display;
   font-size: $font-size-36;
   margin: 0 0 ($grid-gutter-width / 1.125);
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-24;
+  }
 }
 
 .card-subtitle {
@@ -63,12 +73,42 @@ main {
   font-family: $font-family-display;
   font-size: $font-size-24;
   margin: 0 0 ($grid-gutter-width / 1.125);
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-21;
+    margin: 0 0 10px;
+  }
+}
+
+.section {
+  margin: 0 0 ($grid-gutter-width * 2.666);
+}
+
+.section-title {
+  font-size: $font-size-36;
+  font-family: $font-family-display;
+  margin: 0 0 $grid-gutter-width;
+}
+
+.section-summary {
+  margin: 0 0 60px;
+  i {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
 }
 
 .section-follow-up {
   text-align: center;
   color: $gray-dark;
   margin-top: ($grid-gutter-width * 2);
+  @include media-breakpoint-down(sm) {
+    margin-top: $grid-gutter-width;
+    text-align: left;
+  }
+  @include media-breakpoint-down(xs) {
+    margin-top: ($grid-gutter-width / 2);
+  }
   &:before {
     content: '';
     width: 120px;
@@ -76,13 +116,24 @@ main {
     display: block;
     margin: 0 auto $grid-gutter-width;
     background: $gray-dark;
+    @include media-breakpoint-down(sm) {
+      height: 2px;
+      margin: 0 auto ($grid-gutter-width / 2);
+    }
   }
   p {
     font-weight: 500;
     font-size: $font-size-21;
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base;
+      //line-height: 1.25;
+    }
   }
   .btn-lg {
     font-size: $font-size-base;
     margin-top: ($grid-gutter-width / 2);
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
   }
 }

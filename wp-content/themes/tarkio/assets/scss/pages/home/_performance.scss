@@ -1,0 +1,101 @@
+.home-section-performance {
+  background-color: $gray-dark;
+  background: linear-gradient(45deg, #0e1114 0%,#252c33 100%);
+  color: $white;
+  padding: ($grid-gutter-width * 2.666) 0;
+  .section-header {
+    border-bottom: 1px solid rgba($border-color, .4);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px;
+    .section-title {
+      color: $white;
+      margin: 0 0 10px;
+    }
+    .nav-tabs {
+      display: flex;
+      border: 0;
+      .tab {
+        a {
+          color: $white;
+          border-bottom: 4px solid transparent;
+          font-family: $font-family-sans-serif;
+          font-size: $font-size-16;
+          font-weight: 500;
+          padding: 4px 20px 0;
+          line-height: 46px;
+          display: block;
+          text-decoration: none;
+          &.active {
+            color: #3DF5BE;
+            border-color: #3DF5BE;
+            cursor: default;
+            &:hover {
+              background: transparent;
+            }
+          }
+          &:hover {
+          background: rgba($white, .08);
+        }
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin: 0 0 40px;
+  }
+  .table-performance {
+    font-family: $font-family-sans-serif;
+    background: transparent;
+    margin: 0;
+    caption {
+      margin-top: 10px;
+      font-size: $font-size-16;
+      font-family: $font-family-base;
+      color: $white;
+      span:not(:first-child) {
+        margin-left: 30px;
+      }
+    }
+    thead {
+      &:first-child {
+        tr {
+          th {
+            &:first-child {
+              border-radius: 10px 0 0 0;
+            }
+            &:last-child {
+              border-radius: 0 10px 0 0;
+            }
+          }
+        }
+      }
+      tr {
+        th {
+          background-color: rgba($white, .1);
+          font-size: $font-size-21;
+          font-weight: 500;
+          border-color: #979797;
+          &:last-child {
+            text-align: right;
+          }
+          small {
+            font-size: $font-size-13;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          background: rgba(#000000, .3);
+          border-color: #979797;
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

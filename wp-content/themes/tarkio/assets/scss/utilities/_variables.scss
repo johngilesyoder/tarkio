@@ -28,6 +28,7 @@ $tertiary:                    #3C5470;
 $green:                       #158F6A;
 $orange:                      #E67335;
 $blue:                        #2282F0;
+$blue-highlight:              #376AA3;
 
 $body-color:                  #444;
 $headings-color:              $gray-dark;
@@ -54,6 +55,9 @@ $font-size-30:                ($font-size-base * 1.6666);
 $font-size-36:                ($font-size-base * 2);
 $font-size-42:                ($font-size-base * 2.3333);
 $font-size-display:           ($font-size-base * 3.1666);
+$font-size-display-md:        $font-size-42;
+$font-size-display-sm:        $font-size-36;
+$font-size-display-xs:        $font-size-30;
 
 $headings-font-family:        $font-family-sans-serif;
 $headings-font-weight:        600;
@@ -70,3 +74,4 @@ $btn-font-weight:             500;
 
 // Layout
 $header-height:               115px;
+$header-height-sm:            66px;
