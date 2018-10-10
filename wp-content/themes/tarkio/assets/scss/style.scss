@@ -26,6 +26,7 @@ Tags:
 // Components
 @import "components/cms-content";
 @import "components/forms";
+@import "components/page-masthead";
 
 // Layout
 @import "layout/layout";
@@ -42,6 +43,12 @@ Tags:
 @import "pages/home/fund-advisor";
 @import "pages/home/performance";
 @import "pages/home/disclaimer";
+@import "pages/home/chart";
+@import "pages/home/table";
+@import "pages/risks";
+@import "pages/invest";
+@import "pages/shareholder-info";
+@import "pages/press";
 
 // Vendor
 @import "vendor/modal-video";

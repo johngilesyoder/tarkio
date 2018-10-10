@@ -10,6 +10,8 @@
   background-size: cover;
   background-position: 50% 50%;
   background-image: url('assets/img/hero-bg.jpg');
+  position: relative;
+  z-index: 1;
   &:before,
   &:after {
     content: '';

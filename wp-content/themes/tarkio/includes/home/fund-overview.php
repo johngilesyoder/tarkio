@@ -1,7 +1,7 @@
 <section class="home-fund-overview section">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-xl-8">
+      <div class="col-lg-10 col-xl-8">
         <div class="fund-overview-card">
           <div class="text-wrapper">
             <h2 class="section-title">Fund Overview</h2>

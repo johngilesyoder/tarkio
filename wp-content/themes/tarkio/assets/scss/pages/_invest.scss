@@ -1,0 +1,94 @@
+.page-template-template-invest {
+  .platforms-card {
+    @include elevate();
+    background: $white;
+    .platforms-card-header {
+      display: flex;
+      align-items: center;
+      padding: $grid-gutter-width;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  .tarkio-logo {
+    height: 100px;
+    margin-right: $grid-gutter-width;
+
+  }
+  .platforms-summary {
+    font-size: $font-size-21;
+  }
+  .platforms {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    .platform {
+      width: 20%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      padding: $grid-gutter-width;
+      img {
+        margin: 0 0 15px;
+      }
+      .broker-name {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $font-family-sans-serif;
+        color: $headings-color;
+        i {
+          font-size: 14px;
+          vertical-align: middle;
+          margin-left: 5px;
+        }
+      }
+      img {
+        height: 75px;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid $border-color;
+      }
+    }
+  }
+  .managed-by {
+    .section-title,
+    .section-summary {
+      text-align: center;
+    }
+    .disclaimer {
+      font-size: 14px;
+      font-family: $font-family-sans-serif;
+      color: #666;
+      display: block;
+    }
+    .how-to-apply {
+      display: flex;
+      align-items: center;
+      margin: 0 0 60px;
+      & > * {
+        width: 50%;
+      }
+    }
+    .applications {
+      padding-right: $grid-gutter-width;
+      border-right: 1px solid $border-color;
+      .btn {
+        width: 100%;
+        margin: 0 0 10px;
+        i {
+          margin-left: 8px;
+        }
+      }
+    }
+    .form-address {
+      padding-left: $grid-gutter-width;
+      color: $headings-color;
+      strong {
+        font-weight: 600;
+      }
+      .phone-number,
+      .website {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,14 +1,37 @@
 .page-masthead {
   background: $gray-dark;
   color: $white;
-  padding: $header-height 0 ($grid-gutter-width * 2.66);
+  padding: $header-height 0 ($grid-gutter-width * 1.5);
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: 50% 50%;
+  background-image: url('assets/img/hero-bg.jpg');
   margin: 0 0 ($grid-gutter-width * 2);
   background-size: cover;
   background-position: 50% 50%;
+  position: relative;
+  overflow: hidden;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 221px;
+    background-size: cover;
+    display: block;
+    height: 480px;
+  }
+  &:before {
+    background-image: url('assets/img/bricks-left.png');
+    left: 0;
+    width: 320px;
+  }
+  &:after {
+    background-image: url('assets/img/bricks-right.png');
+    right: 0;
+    top: 181px;
+    width: 254px;
+  }
   .masthead-content {
     margin-top: ($grid-gutter-width * 2);
     .page-title {
@@ -17,10 +40,10 @@
       font-size: $font-size-display;
       letter-spacing: .5px;
       line-height: 1.125;
-      margin: 0 0 ($grid-gutter-width / 2);
+      margin: 0;
     }
     .subtext {
-      margin: 0;
+      margin: ($grid-gutter-width / 2) 0 0;
       font-size: $font-size-21;
       font-weight: 500;
       p {

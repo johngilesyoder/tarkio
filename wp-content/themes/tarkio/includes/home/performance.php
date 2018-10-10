@@ -1,7 +1,7 @@
 <section class="home-section-performance section">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-xl-8">
+      <div class="col-lg-10 col-xl-8">
         <div class="section-header">
           <h2 class="section-title">TARKX Performance</h2>
 
@@ -20,69 +20,28 @@
 
         <div class="tab-content" id="myTabContent">
 
+          <!-- Chart 1 -->
+          <!-- =================================== -->
           <div class="tab-pane fade show active" id="one-year" role="tabpanel" aria-labelledby="home-tab">
-            CHART
+            <?php get_template_part( 'includes/home/chart-1' ); ?>
           </div>
-          <div class="tab-pane fade" id="five-year" role="tabpanel" aria-labelledby="profile-tab">...2</div>
-          <div class="tab-pane fade" id="inception" role="tabpanel" aria-labelledby="contact-tab">...3</div>
+
+          <!-- Chart 2 -->
+          <!-- =================================== -->
+          <div class="tab-pane fade" id="five-year" role="tabpanel" aria-labelledby="profile-tab">
+            <?php get_template_part( 'includes/home/chart-2' ); ?>
+          </div>
+
+          <!-- Chart 3 -->
+          <!-- =================================== -->
+          <div class="tab-pane fade" id="inception" role="tabpanel" aria-labelledby="contact-tab">
+            <?php get_template_part( 'includes/home/chart-3' ); ?>
+          </div>
         </div>
 
-        <div class="table-responsive">
-          <table class="table table-dark table-bordered table-performance">
-            <caption>
-              <span>* Return does not include reinvestment of dividends</span>
-              <span>** Annualized Return</span>
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">1 Year Performance <small>6/29/2018</small></th>
-                <th scope="col">Total Return %</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tarkio Fund</td>
-                <td>9.01%</td>
-              </tr>
-              <tr>
-                <td>S&P 500*</td>
-                <td>11.76%</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th scope="col">5 Year Performance <small>6/29/2018</small></th>
-                <th scope="col">Total Return %</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tarkio Fund</td>
-                <td>15.75% **</td>
-              </tr>
-              <tr>
-                <td>S&P 500*</td>
-                <td>10.98% **</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th scope="col">Since Inception <small>6/29/2018</small></th>
-                <th scope="col">Total Return %</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Tarkio Fund</td>
-                <td>12.45% **</td>
-              </tr>
-              <tr>
-                <td>S&P 500*</td>
-                <td>11.16% **</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <!-- Table -->
+        <!-- =================================== -->
+        <?php get_template_part( 'includes/home/table' ); ?>
 
       </div>
     </div>

@@ -1,0 +1,30 @@
+.page-template-template-risks {
+  .item-header {
+    border-bottom: 1px solid $border-color;
+    .item-title {
+      margin: 0;
+      button {
+        font-family: $font-family-sans-serif;
+        font-size: $font-size-base;
+        font-weight: 500;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        &.collapsed {
+          &:before {
+            content: '\e313';
+          }
+        }
+        &:before {
+          font-family: 'Material Icons';
+          content: '\e316';
+          text-decoration: none !important;
+        }
+        &:hover {
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

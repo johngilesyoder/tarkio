@@ -3,11 +3,34 @@
   background: linear-gradient(45deg, #0e1114 0%,#252c33 100%);
   color: $white;
   padding: ($grid-gutter-width * 2.666) 0;
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    display: block;
+    height: 480px;
+  }
+  &:before {
+    background-image: url('assets/img/bricks-2-left.png');
+    top: 285px;
+    left: 0;
+    width: 306px;
+    height: 720px;
+  }
+  &:after {
+    background-image: url('assets/img/bricks-2-right.png');
+    top: 225px;
+    right: 0;
+    width: 308px;
+    height: 973px;
+  }
   .section-header {
     border-bottom: 1px solid rgba($border-color, .4);
     display: flex;
     justify-content: space-between;
-    margin: 0 0 40px;
+    margin: 0 0 60px;
     .section-title {
       color: $white;
       margin: 0 0 10px;
@@ -43,59 +66,5 @@
   }
   .tab-content {
     margin: 0 0 40px;
-  }
-  .table-performance {
-    font-family: $font-family-sans-serif;
-    background: transparent;
-    margin: 0;
-    caption {
-      margin-top: 10px;
-      font-size: $font-size-16;
-      font-family: $font-family-base;
-      color: $white;
-      span:not(:first-child) {
-        margin-left: 30px;
-      }
-    }
-    thead {
-      &:first-child {
-        tr {
-          th {
-            &:first-child {
-              border-radius: 10px 0 0 0;
-            }
-            &:last-child {
-              border-radius: 0 10px 0 0;
-            }
-          }
-        }
-      }
-      tr {
-        th {
-          background-color: rgba($white, .1);
-          font-size: $font-size-21;
-          font-weight: 500;
-          border-color: #979797;
-          &:last-child {
-            text-align: right;
-          }
-          small {
-            font-size: $font-size-13;
-            margin-left: 5px;
-          }
-        }
-      }
-    }
-    tbody {
-      tr {
-        td {
-          background: rgba(#000000, .3);
-          border-color: #979797;
-          &:last-child {
-            text-align: right;
-          }
-        }
-      }
-    }
   }
 }

@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  padding: ($grid-gutter-width * 2) 0;
+  padding: 0 0 ($grid-gutter-width * 2);
   @include media-breakpoint-down(sm) {
     padding: $grid-gutter-width 0;
   }

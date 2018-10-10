@@ -8024,6 +8024,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/bricks-2-left.png": {
+		"ft": 32768,
+		"iS": 21795,
+		"oA": 0,
+		"oAP": "/assets/img/bricks-2-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/bricks-2-right.png": {
+		"ft": 32768,
+		"iS": 107370,
+		"oA": 0,
+		"oAP": "/assets/img/bricks-2-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/img/bricks-left.png": {
 		"ft": 32768,
 		"iS": 92574,
@@ -8044,6 +8066,61 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/broker-charles-schwab.jpg": {
+		"ft": 16384,
+		"iS": 16638,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/broker-charles-schwab.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/broker-etrade.jpg": {
+		"ft": 16384,
+		"iS": 9965,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/broker-etrade.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/broker-scottrade.jpg": {
+		"ft": 16384,
+		"iS": 10374,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/broker-scottrade.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/broker-td-ameritrade.jpg": {
+		"ft": 16384,
+		"iS": 6714,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/broker-td-ameritrade.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/broker-vanguard.jpg": {
+		"ft": 16384,
+		"iS": 6752,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/broker-vanguard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/img/fsc-logo-white.png": {
@@ -8122,12 +8199,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/tarkio-fund-logo.jpg": {
+		"ft": 16384,
+		"iS": 55650,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/tarkio-fund-logo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/js/lib/animation.gsap.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/assets/js/lib/min/animation.gsap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/assets/js/lib/Chart.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/lib/min/Chart.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -8970,6 +9068,71 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/assets/scss/pages/_invest.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/_invest.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/_press.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/_press.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/_risks.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/_risks.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/_shareholder-info.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/_shareholder-info.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/home/_chart.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/home/_chart.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/assets/scss/pages/home/_disclaimer.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -9031,6 +9194,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/pages/home/_performance.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/assets/scss/pages/home/_table.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/pages/home/_table.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9247,6 +9423,27 @@
 		"oAP": "/includes/header-nav.php",
 		"oF": 0
 		},
+	"/includes/home/chart-1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/chart-1.php",
+		"oF": 0
+		},
+	"/includes/home/chart-2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/chart-2.php",
+		"oF": 0
+		},
+	"/includes/home/chart-3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/chart-3.php",
+		"oF": 0
+		},
 	"/includes/home/disclaimer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -9280,6 +9477,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "/includes/home/performance.php",
+		"oF": 0
+		},
+	"/includes/home/table.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/includes/home/table.php",
 		"oF": 0
 		},
 	"/includes/page-masthead.php": {
@@ -9639,11 +9843,32 @@
 		"oAP": "/template-home.php",
 		"oF": 0
 		},
-	"/template-investment.php": {
+	"/template-invest.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "/template-investment.php",
+		"oAP": "/template-invest.php",
+		"oF": 0
+		},
+	"/template-press.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/template-press.php",
+		"oF": 0
+		},
+	"/template-risks.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/template-risks.php",
+		"oF": 0
+		},
+	"/template-shareholder-info.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/template-shareholder-info.php",
 		"oF": 0
 		},
 	"/template-sidebar.php": {

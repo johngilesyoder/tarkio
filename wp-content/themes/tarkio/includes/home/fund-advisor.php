@@ -1,7 +1,7 @@
 <section class="home-fund-advisor section">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-xl-8">
+      <div class="col-lg-10 col-xl-8">
         <div class="text-wrapper">
           <span class="preheader">Fund Advisor</span>
           <h2 class="section-title">Managed by Front Street Capital Management</h2>
