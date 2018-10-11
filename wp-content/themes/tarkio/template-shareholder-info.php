@@ -35,137 +35,63 @@
 					<div class="tab-content" id="myTabContent">
 
 	          <div class="tab-pane fade show active" id="reports" role="tabpanel" aria-labelledby="reports-tab">
-	            <a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">assignment</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">2017 Statement of Additional Information</h4>
-									<p class="report-description">2017 Statement of additional information for the Tarkio Fund</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">assignment</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">2017 Statement of Additional Information</h4>
-									<p class="report-description">2017 Statement of additional information for the Tarkio Fund</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">assignment</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">2017 Statement of Additional Information</h4>
-									<p class="report-description">2017 Statement of additional information for the Tarkio Fund</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">assignment</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">2017 Statement of Additional Information</h4>
-									<p class="report-description">2017 Statement of additional information for the Tarkio Fund</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">assignment</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">2017 Statement of Additional Information</h4>
-									<p class="report-description">2017 Statement of additional information for the Tarkio Fund</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
+							<?php while( have_rows('shareholder_document') ): the_row();
+								// vars
+								$title = get_sub_field('shareholder_document_title');
+								$description = get_sub_field('shareholder_document_description');
+								$date = get_sub_field('shareholder_document_date');
+								$file = get_sub_field('shareholder_document_file');
+								$type = get_sub_field('shareholder_document_type');
+								?>
+								<?php if( $type == 'Report') : ?>
+									<a href="<?php echo $file; ?>" class="report">
+										<div class="icon">
+											<i class="material-icons">assignment</i>
+										</div>
+										<div class="details">
+											<h4 class="report-title"><?php echo $title; ?></h4>
+											<p class="report-description"><?php echo $description; ?></p>
+										</div>
+										<div class="download">
+											<span class="download-link">
+												Download now
+												<i class="material-icons">file_download</i>
+											</span>
+											<span class="date"><?php echo $date; ?></span>
+										</div>
+									</a>
+								<?php endif; ?>
+							<?php endwhile; ?>
 	          </div>
 
 						<div class="tab-pane fade" id="letters" role="tabpanel" aria-labelledby="letters-tab">
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">insert_drive_file</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">Q2 2018 Shareholder Letter (Buffett Remarks)</h4>
-									<p class="report-description">A Tarkio fund update as of the 2nd quarter of 2018.</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">insert_drive_file</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">Q2 2018 Shareholder Letter (Buffett Remarks)</h4>
-									<p class="report-description">A Tarkio fund update as of the 2nd quarter of 2018.</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
-							<a href="#" class="report">
-								<div class="icon">
-									<i class="material-icons">insert_drive_file</i>
-								</div>
-								<div class="details">
-									<h4 class="report-title">Q2 2018 Shareholder Letter (Buffett Remarks)</h4>
-									<p class="report-description">A Tarkio fund update as of the 2nd quarter of 2018.</p>
-								</div>
-								<div class="download">
-									<span class="download-link">
-										Download now
-										<i class="material-icons">file_download</i>
-									</span>
-									<span class="date">September 30, 2017</span>
-								</div>
-							</a>
+							<?php while( have_rows('shareholder_document') ): the_row();
+								// vars
+								$title = get_sub_field('shareholder_document_title');
+								$description = get_sub_field('shareholder_document_description');
+								$date = get_sub_field('shareholder_document_date');
+								$file = get_sub_field('shareholder_document_file');
+								$type = get_sub_field('shareholder_document_type');
+								?>
+								<?php if( $type == 'Letter') : ?>
+									<a href="<?php echo $file; ?>" class="report">
+										<div class="icon">
+											<i class="material-icons">insert_drive_file</i>
+										</div>
+										<div class="details">
+											<h4 class="report-title"><?php echo $title; ?></h4>
+											<p class="report-description"><?php echo $description; ?></p>
+										</div>
+										<div class="download">
+											<span class="download-link">
+												Download now
+												<i class="material-icons">file_download</i>
+											</span>
+											<span class="date"><?php echo $date; ?></span>
+										</div>
+									</a>
+								<?php endif; ?>
+							<?php endwhile; ?>
 	          </div>
 
 					</div>

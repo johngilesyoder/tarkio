@@ -1,4 +1,9 @@
-<?php /* Template Name: Invest */ get_header(); ?>
+<?php /* Template Name: Invest */
+	get_header();
+	$shareholders_phone = get_field('shareholder_phone_number', 'option');
+  $shareholders_phone_unformatted = preg_replace('/\D+/', '', $shareholders_phone);
+?>
+
 
 <main role="main">
 
@@ -13,57 +18,47 @@
 					<div class="platforms-card-header">
 						<img class="tarkio-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/tarkio-fund-logo.jpg" alt="Tarkio Fund Logo">
 						<div class="platforms-summary">
-							Tarkio Fund (TARKX) is available on the following platforms with a minimum investment of $1,000 IRA or 2,500 non-retirement (brokerage trade fees apply).
+							<?php the_field('brokers_summary'); ?>
 						</div>
 					</div>
 					<div class="platforms">
-						<a href="#" target="_blank" class="platform">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/broker-charles-schwab.jpg">
-							<span class="broker-name">Charles Schwab<i class="material-icons">launch</i></span>
-						</a>
-						<a href="#" target="_blank" class="platform">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/broker-td-ameritrade.jpg">
-							<span class="broker-name">TD Ameritrade<i class="material-icons">launch</i></span>
-						</a>
-						<a href="#" target="_blank" class="platform">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/broker-vanguard.jpg">
-							<span class="broker-name">Vanguard<i class="material-icons">launch</i></span>
-						</a>
-						<a href="#" target="_blank" class="platform">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/broker-scottrade.jpg">
-							<span class="broker-name">Scottrade<i class="material-icons">launch</i></span>
-						</a>
-						<a href="#" target="_blank" class="platform">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/broker-etrade.jpg">
-							<span class="broker-name">E*Trade<i class="material-icons">launch</i></span>
-						</a>
+						<?php while( have_rows('brokers') ): the_row();
+							// vars
+							$name = get_sub_field('broker_name');
+							$logo = get_sub_field('broker_logo');
+							?>
+							<div class="platform">
+								<img src="<?php echo $logo['url']; ?>">
+								<span class="broker-name"><?php echo $name; ?></span>
+							</div>
+						<?php endwhile; ?>
 					</div>
 				</section>
 				<section class="managed-by">
-					<h2 class="section-title">Managed by Front Street Capital Management, Inc.</h2>
+					<h2 class="section-title"><?php the_field('managed_by_title'); ?></h2>
 					<p class="section-summary">
-						TARKX can be purchased directly with no minimum (and no brokerage fees) by completing the applicable form below and returning it by mail to Tarkio Fund's third party administrator.
+						<?php the_field('managed_by_summary'); ?>
 					</p>
 					<div class="how-to-apply">
 						<div class="applications">
-							<a href="#" target="_blank" class="btn btn-primary btn-lg">Non-IRA Application<i class="material-icons">picture_as_pdf</i></a>
-							<a href="#" target="_blank" class="btn btn-primary btn-lg">IRA Application<i class="material-icons">picture_as_pdf</i></a>
-							<a href="#" target="_blank" class="btn btn-primary btn-lg">IRA Transfer<i class="material-icons">picture_as_pdf</i></a>
+							<?php while( have_rows('application_buttons') ): the_row();
+								// vars
+								$button_text = get_sub_field('application_button_title');
+								$button_link = get_sub_field('application_button_link');
+								?>
+								<a href="<?php echo $button_link; ?>" target="_blank" class="btn btn-primary btn-lg"><?php echo $button_text; ?><i class="material-icons">picture_as_pdf</i></a>
+							<?php endwhile; ?>
 						</div>
 						<div class="form-address">
 							<address>
-								<strong>c/o Mutual Shareholder Services</strong><br>
-								8000 Town Centre Drive, Suite 400<br>
-								Broadview Heights, OH 44147<br>
+								<?php the_field('shareholders_address', 'option'); ?>
 							</address>
-							<span class="phone-number">Phone: <a href="tel:8667383629">(866) 738-3629</a></span>
+							<span class="phone-number">Phone: <a href="tel:<?php echo $shareholders_phone_unformatted; ?>"><?php echo $shareholders_phone; ?></a></span>
 						</div>
 					</div>
-					<small class="disclaimer">
-						Please consider the investment objectives, risks, charges and expenses of the fund carefully before investing.  The investment return and principal value of an investment will fluctuate so that an investor’s shares, when redeemed, may be worth more or less than their original cost.
-					</small>
+					<small class="disclaimer"><?php the_field('managed_by_disclaimer'); ?></small>
 					<div class="section-follow-up">
-						<p>For a prospectus containing this and other information, please click here or call (866) 738-3629.  Please read the prospectus containing this and other information carefully before investing.</p>
+						<p><?php the_field('managed_by_follow_up'); ?></p>
 					</div>
 				</section>
 			</div>

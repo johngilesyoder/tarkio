@@ -15,7 +15,7 @@
             <div class="col">
               <h4>Our Offices</h4>
               <address>
-                <?php the_field('address', 'option'); ?>
+                <?php the_field('advisor_address', 'option'); ?>
               </address>
             </div>
             <div class="col">

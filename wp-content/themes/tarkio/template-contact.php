@@ -1,4 +1,12 @@
-<?php /* Template Name: Contact */ get_header(); ?>
+<?php /* Template Name: Contact */
+	get_header();
+  $advisor_phone = get_field('advisor_phone_number', 'option');
+  $advisor_phone_unformatted = preg_replace('/\D+/', '', $advisor_phone);
+	$shareholders_phone = get_field('shareholder_phone_number', 'option');
+  $shareholders_phone_unformatted = preg_replace('/\D+/', '', $shareholders_phone);
+	$distributor_phone = get_field('distributor_phone_number', 'option');
+  $distributor_phone_unformatted = preg_replace('/\D+/', '', $distributor_phone);
+?>
 
 <main role="main">
 
@@ -19,11 +27,9 @@
 							<h3 class="card-title">Shareholder Inquiries</h3>
 							<strong>Tarkio Fund</strong>
 							<address>
-								c/o Mutual Shareholder Services<br>
-								8000 Town Centre Drive, Suite 400<br>
-								Broadview Heights, OH 44147<br>
+								<?php the_field('shareholders_address', 'option'); ?>
 							</address>
-							<span class="phone-number">Phone: <a href="tel:8667383629">(866) 738-3629</a></span>
+							<span class="phone-number">Phone: <a href="tel:<?php echo $shareholders_phone_unformatted; ?>"><?php echo $shareholders_phone; ?></a></span>
 						</div>
 					</div>
 
@@ -32,10 +38,9 @@
 							<h3 class="card-title">Distributor</h3>
 							<strong>Arbor Court Capital, LLC</strong>
 							<address>
-								8000 Town Centre Drive, Suite 400<br>
-								Broadview Heights, OH 44147
+								<?php the_field('distributor_address', 'option'); ?>
 							</address>
-							<span class="phone-number">Phone: <a href="tel:4409220066">440-922-0066</a> Ext. 123</span>
+							<span class="phone-number">Phone: <a href="tel:<?php echo $distributor_phone_unformatted; ?>"><?php echo $distributor_phone; ?></a> Ext. 123</span>
 						</div>
 					</div>
 
@@ -44,10 +49,9 @@
 							<h3 class="card-title">Advisor to the Fund</h3>
 							<strong>Front Street Capital Management, Inc.</strong>
 							<address>
-								218 East Front Street, Suite 205<br>
-								Missoula, MT 59802
+								<?php the_field('advisor_address', 'option'); ?>
 							</address>
-							<span class="phone-number">​Phone: <a href="tel:4065410130">(406) 541-0130</a></span>
+							<span class="phone-number">​Phone: <a href="tel:<?php echo $advisor_phone_unformatted; ?>"><?php echo $advisor_phone; ?></a></span>
 							<span class="website">Website: <a href="https://frontstreetcap.com">frontstreetcap.com</a></span>
 						</div>
 					</div>
