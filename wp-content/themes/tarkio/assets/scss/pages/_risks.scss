@@ -9,6 +9,11 @@
         font-weight: 500;
         text-decoration: none;
         padding: .5rem .75rem;
+        @include media-breakpoint-down(sm) {
+          font-size: $font-size-16;
+          white-space: normal;
+          text-align: left;
+        }
         &.collapsed {
           &:before {
             content: '\e313';
@@ -18,6 +23,9 @@
           font-family: 'Material Icons';
           content: '\e316';
           text-decoration: none !important;
+          @include media-breakpoint-down(sm) {
+            margin-right: 5px;
+          }
         }
         &:hover {
           span {

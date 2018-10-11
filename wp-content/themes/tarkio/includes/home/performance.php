@@ -13,7 +13,7 @@
               <a id="five-year-tab" data-toggle="tab" href="#five-year" role="tab">5 Year</a>
             </li>
             <li class="tab">
-              <a id="inception-tab" data-toggle="tab" href="#inception" role="tab">Since Inception</a>
+              <a id="inception-tab" data-toggle="tab" href="#inception" role="tab"><span>Since </span>Inception</a>
             </li>
           </ul>
         </div>

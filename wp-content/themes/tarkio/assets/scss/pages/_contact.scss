@@ -1,6 +1,12 @@
 .page-template-template-contact {
   .entity {
     color: $headings-color;
+    @include media-breakpoint-down(md) {
+      margin: 0 0 $grid-gutter-width;
+    }
+    .card-title {
+      margin: 0 0 15px;
+    }
     strong {
       font-weight: 600;
     }

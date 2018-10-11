@@ -21,7 +21,7 @@ body {
 main {
   padding: 0 0 ($grid-gutter-width * 2);
   @include media-breakpoint-down(sm) {
-    padding: $grid-gutter-width 0;
+    padding: 0 0 $grid-gutter-width;
   }
 }
 
@@ -81,12 +81,25 @@ main {
 
 .section {
   margin: 0 0 ($grid-gutter-width * 2.666);
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 40px;
+  }
+  @include media-breakpoint-down(xs) {
+  }
 }
 
 .section-title {
   font-size: $font-size-36;
   font-family: $font-family-display;
   margin: 0 0 $grid-gutter-width;
+  @include media-breakpoint-down(sm) {
+    margin: 0 0 $grid-gutter-width;
+    font-size: $font-size-display-sm;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-display-xs;
+    margin: 0 0 ($grid-gutter-width / 2);
+  }
 }
 
 .section-summary {

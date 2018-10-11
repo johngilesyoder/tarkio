@@ -1,4 +1,4 @@
-<header class="site-header">
+<header id="site-header" class="site-header">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="/">
@@ -8,7 +8,7 @@
           <span class="company-managed">managed by <strong>Front Street Capital Management, Inc.</strong></span>
         </div>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">

@@ -12,6 +12,10 @@
   background-image: url('assets/img/hero-bg.jpg');
   position: relative;
   z-index: 1;
+  @include media-breakpoint-down(sm) {
+    height: calc(100vh - 60px);
+    margin-bottom: -$header-height-sm;
+  }
   &:before,
   &:after {
     content: '';
@@ -20,19 +24,35 @@
     background-size: cover;
     display: block;
     height: 480px;
+    z-index: 10;
+    @include media-breakpoint-down(sm) {
+      //height: 350px;
+      top: 175px;
+    }
   }
   &:before {
     background-image: url('assets/img/bricks-left.png');
     left: 0;
     width: 320px;
+    @include media-breakpoint-down(sm) {
+      background-position: 100% 50%;
+      left: -150px;
+    }
   }
   &:after {
     background-image: url('assets/img/bricks-right.png');
     right: 0;
     width: 254px;
+    @include media-breakpoint-down(sm) {
+      background-position: 0% 50%;
+      right: -150px;
+      top: 75px;
+    }
   }
   .hero-content {
     text-align: center;
+    position: relative;
+    z-index: 20;
     .title {
       color: $white;
       font-family: $font-family-display;
@@ -41,20 +61,47 @@
       letter-spacing: .5px;
       line-height: 1.125;
       margin: 0 0 ($grid-gutter-width / 2);
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-display-md;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-display-sm;
+        margin: 0 0 10px;
+      }
+
     }
     .subtext {
       margin: 0;
       font-size: $font-size-27;
       font-weight: 500;
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-base;
+        line-height: 1.25;
+      }
     }
   }
   .actions {
     margin-top: ($grid-gutter-width * 1.5);
+    @include media-breakpoint-down(xs) {
+      margin-top: $grid-gutter-width;
+    }
     .btn {
       font-size: $font-size-base;
       width: 100%;
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+        margin: 0 0 10px;
+        &:not(:last-child) {
+          margin: 0;
+        }
+      }
       &:not(:last-child) {
         margin-bottom: ($grid-gutter-width / 2);
+      }
+    }
+    .btn-outline-light {
+      @include media-breakpoint-down(xs) {
+        margin-top: $grid-gutter-width;
       }
     }
     .link-fact-sheet {
@@ -63,6 +110,9 @@
       font-weight: 500;
       margin-top: $grid-gutter-width;
       display: inline-block;
+      @include media-breakpoint-down(xs) {
+        margin-top: 15px
+      }
       i {
         line-height: 1;
         vertical-align: middle;

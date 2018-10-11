@@ -12,6 +12,9 @@ select {
     @extend .alert;
     @extend .alert-danger;
     font-weight: 500 !important;
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 15px;
+    }
   }
   .gform_fields {
     display: flex !important;
@@ -19,7 +22,6 @@ select {
     justify-content: space-between;
     .gfield {
       padding: 0 !important;
-      margin-top: 0 !important;
       .gfield_description {
         font-family: $font-family-sans-serif;
         font-weight: 400;
@@ -33,6 +35,9 @@ select {
         input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
         textarea {
           border-color: $form-feedback-invalid-color;
+        }
+        & + .gfield_error {
+          margin-top: 15px !important;
         }
       }
       .gfield_label {
@@ -54,6 +59,9 @@ select {
     #field_1_1,
     #field_1_2 {
       width: calc(50% - 15px) !important;
+      @include media-breakpoint-down(sm) {
+        width: 100% !important;
+      }
     }
     #field_1_3,
     #field_1_4 {

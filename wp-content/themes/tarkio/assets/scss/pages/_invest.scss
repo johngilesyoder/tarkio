@@ -7,26 +7,48 @@
       align-items: center;
       padding: $grid-gutter-width;
       border-bottom: 1px solid $border-color;
+      p:last-child {
+        margin: 0;
+      }
+      @include media-breakpoint-down(sm) {
+        flex-flow: row wrap;
+        padding: 30px 15px;
+      }
     }
   }
   .tarkio-logo {
     height: 100px;
     margin-right: $grid-gutter-width;
-
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto 30px;
+    }
   }
   .platforms-summary {
     font-size: $font-size-21;
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base;
+    }
   }
   .platforms {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    @include media-breakpoint-down(lg) {
+      padding: 15px 0;
+    }
     .platform {
       width: 20%;
       display: flex;
       flex-flow: column;
       align-items: center;
-      padding: $grid-gutter-width;
+      padding: $grid-gutter-width 15px;
+      @include media-breakpoint-down(lg) {
+        width: 33.3333%;
+        padding: 15px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 50%;
+      }
       img {
         margin: 0 0 15px;
       }
@@ -46,6 +68,9 @@
       }
       &:not(:last-child) {
         border-right: 1px solid $border-color;
+        @include media-breakpoint-down(lg) {
+          border: 0;
+        }
       }
     }
   }
@@ -59,21 +84,39 @@
       font-family: $font-family-sans-serif;
       color: #666;
       display: block;
+      @include media-breakpoint-down(md) {
+        margin: 0 0 40px;
+      }
     }
     .how-to-apply {
       display: flex;
       align-items: center;
+      flex-flow: row wrap;
       margin: 0 0 60px;
+      @include media-breakpoint-down(md) {
+        margin: 0 0 30px;
+      }
       & > * {
         width: 50%;
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
       }
     }
     .applications {
       padding-right: $grid-gutter-width;
       border-right: 1px solid $border-color;
+      @include media-breakpoint-down(md) {
+        border: 0;
+        padding: 0;
+        margin: 0 0 30px;
+      }
       .btn {
         width: 100%;
         margin: 0 0 10px;
+        &:last-child {
+          margin: 0;
+        }
         i {
           margin-left: 8px;
         }
@@ -82,6 +125,9 @@
     .form-address {
       padding-left: $grid-gutter-width;
       color: $headings-color;
+      @include media-breakpoint-down(md) {
+        padding: 0;
+      }
       strong {
         font-weight: 600;
       }

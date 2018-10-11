@@ -2,6 +2,9 @@
   .text-wrapper {
     text-align: center;
     margin: 0 0 60px;
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 40px;
+    }
   }
   .preheader {
     margin: 0 0 10px;
@@ -11,6 +14,11 @@
     background: $white;
     @include elevate;
     padding: $grid-gutter-width;
+    @include media-breakpoint-down(sm) {
+      padding: $grid-gutter-width 15px;
+      margin-top: 0;
+      text-align: center;
+    }
   }
   .fsc-logo {
     margin: -30px auto;
@@ -19,6 +27,13 @@
     width: 420px;
     border-radius: 10px 10px 0 0;
     padding: 20px $grid-gutter-width;
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto 30px;
+      width: 80%;
+      padding: 0;
+      border-radius: 0;
+      transform: none;
+    }
     img {
       width: 100%;
     }

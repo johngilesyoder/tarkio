@@ -12,6 +12,17 @@
   background-position: 50% 50%;
   position: relative;
   overflow: hidden;
+  @include media-breakpoint-down(lg) {
+    padding: $header-height-md 0 ($grid-gutter-width * 1.5);
+  }
+  @include media-breakpoint-down(md) {
+    padding: $header-height-md 0 $grid-gutter-width;
+    margin: 0 0 $grid-gutter-width;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: $header-height-sm 0 $grid-gutter-width;
+    margin: 0 0 $grid-gutter-width;
+  }
   &:before,
   &:after {
     content: '';
@@ -20,20 +31,42 @@
     background-size: cover;
     display: block;
     height: 480px;
+    @include media-breakpoint-down(md) {
+      top: 100px;
+      height: 350px;
+    }
+    @include media-breakpoint-down(sm) {
+      top: 75px;
+      height: 200px;
+    }
   }
   &:before {
     background-image: url('assets/img/bricks-left.png');
     left: 0;
     width: 320px;
+    @include media-breakpoint-down(md) {
+      width: 200px;
+    }
   }
   &:after {
     background-image: url('assets/img/bricks-right.png');
     right: 0;
     top: 181px;
     width: 254px;
+    @include media-breakpoint-down(md) {
+      top: 150px;
+      width: 200px;
+    }
+    @include media-breakpoint-down(md) {
+      top: 100px;
+      width: 125px;
+    }
   }
   .masthead-content {
     margin-top: ($grid-gutter-width * 2);
+    @include media-breakpoint-down(sm) {
+      margin-top: $grid-gutter-width;
+    }
     .page-title {
       color: $white;
       font-family: $font-family-display;
@@ -41,13 +74,30 @@
       letter-spacing: .5px;
       line-height: 1.125;
       margin: 0;
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-display-md;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-display-sm;
+      }
+      @include media-breakpoint-down(xs) {
+        font-size: $font-size-display-xs;
+      }
     }
     .subtext {
       margin: ($grid-gutter-width / 2) 0 0;
       font-size: $font-size-21;
       font-weight: 500;
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-base;
+        line-height: 1.25;
+      }
       p {
         font-size: $font-size-21;
+        @include media-breakpoint-down(sm) {
+          font-size: $font-size-base;
+          line-height: 1.25;
+        }
         &:last-child {
           margin: 0;
         }
@@ -58,35 +108,6 @@
         &:hover {
           color: $white;
         }
-      }
-    }
-  }
-}
-
-
-// slim
-.archive.category,
-.archive.date,
-.archive.tag,
-.archive.author,
-.single-post {
-  .page-masthead {
-    padding: $header-height 0 $grid-gutter-width;
-    .masthead-content {
-      margin-top: $grid-gutter-width;
-      .page-title {
-        font-size: $font-size-30;
-        display: inline-block;
-        a {
-          color: $white;
-          i {
-            margin-right: 10px;
-          }
-        }
-      }
-      .subtext {
-        display: inline-block;
-        margin-left: ($grid-gutter-width / 2);
       }
     }
   }

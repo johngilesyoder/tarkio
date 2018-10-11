@@ -6,14 +6,37 @@
   right: 0;
   width: 100%;
   z-index: 100;
+  background: transparent;
+  transition: background 150ms;
+  &.is--open {
+    background: $gray-dark;
+  }
   .navbar {
     padding: $grid-gutter-width 0;
+    @include media-breakpoint-down(lg) {
+      padding: 15px 0;
+    }
+    .navbar-toggler {
+      color: rgba(255,255,255,0.8);
+      border-color: rgba(255,255,255,0.5);
+      border-radius: 3px;
+      .navbar-toggler-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
   .navbar-brand {
     display: flex;
     align-items: center;
     .site-logo-mark {
-      height: 60px
+      height: 60px;
+      @include media-breakpoint-down(lg) {
+        height: 40px;
+      }
+      @include media-breakpoint-down(xs) {
+        height: 30px;
+      }
     }
     .site-logo-type {
       margin-left: 15px;
@@ -26,9 +49,15 @@
         font-weight: 500;
         line-height: 1.125;
         text-transform: uppercase;
+        @include media-breakpoint-down(lg) {
+          font-size: $font-size-21;
+        }
       }
       .company-managed {
         font-size: $font-size-12;
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
         strong {
           font-weight: 500;
         }
@@ -36,12 +65,24 @@
     }
   }
   .navbar-nav {
+    @include media-breakpoint-down(md) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
     .nav-link {
       font-size: $font-size-15;
       font-weight: 500;
       padding-left: 25px;
       padding-right: 25px;
       color: $white;
+      @include media-breakpoint-down(lg) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @include media-breakpoint-down(md) {
+        padding-left: 0;
+        padding-right: 0;
+      }
       &:hover {
         color: $white;
         text-decoration: underline;

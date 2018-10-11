@@ -5,7 +5,7 @@
         <div class="fund-overview-card">
           <div class="text-wrapper">
             <h2 class="section-title">Fund Overview</h2>
-            <p><?php the_field('fund_overview_summary'); ?></p>
+            <p><?php the_field('overview_summary'); ?></p>
           </div>
           <div class="metrics">
             <div class="metric">

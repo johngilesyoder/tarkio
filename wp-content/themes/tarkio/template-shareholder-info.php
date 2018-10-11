@@ -26,10 +26,10 @@
 				<div class="shareholder-documents">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="tab">
-              <a  class="active" id="reports-tab" data-toggle="tab" href="#reports" role="tab">Shareholder Reports</a>
+              <a  class="active" id="reports-tab" data-toggle="tab" href="#reports" role="tab"><span>Shareholder </span>Reports</a>
             </li>
             <li class="tab">
-              <a id="letters-tab" data-toggle="tab" href="#letters" role="tab">Shareholder Letters</a>
+              <a id="letters-tab" data-toggle="tab" href="#letters" role="tab"><span>Shareholder </span>Letters</a>
             </li>
           </ul>
 					<div class="tab-content" id="myTabContent">

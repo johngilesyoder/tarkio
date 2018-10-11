@@ -4,6 +4,9 @@
   color: $white;
   padding: ($grid-gutter-width * 2.666) 0;
   position: relative;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   &:before,
   &:after {
     content: '';
@@ -11,6 +14,9 @@
     background-size: cover;
     display: block;
     height: 480px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
   }
   &:before {
     background-image: url('assets/img/bricks-2-left.png');
@@ -31,14 +37,29 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 60px;
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 $grid-gutter-width;
+      flex-flow: row wrap;
+    }
     .section-title {
       color: $white;
-      margin: 0 0 10px;
+      margin: 0;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin: 0 0 20px;
+      }
     }
     .nav-tabs {
       display: flex;
       border: 0;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        flex-flow: row wrap;
+      }
       .tab {
+        @include media-breakpoint-down(sm) {
+          width: 33%;
+        }
         a {
           color: $white;
           border-bottom: 4px solid transparent;
@@ -49,6 +70,18 @@
           line-height: 46px;
           display: block;
           text-decoration: none;
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 4px 10px;
+            line-height: 36px;
+          }
+          span {
+            @include media-breakpoint-down(sm) {
+              display: none;
+            }
+          }
           &.active {
             color: #3DF5BE;
             border-color: #3DF5BE;

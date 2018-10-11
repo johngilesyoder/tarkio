@@ -7,15 +7,26 @@
   }
   .text-wrapper {
     display: flex;
+    flex-flow: row wrap;
     padding: $grid-gutter-width;
+    p:last-child {
+      margin: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: $grid-gutter-width 15px;
+    }
     .section-title {
       white-space: nowrap;
       margin-right: $grid-gutter-width;
       margin-bottom: 0;
+      @include media-breakpoint-down(sm) {
+        margin: 0 0 15px;
+      }
     }
   }
   .metrics {
     display: flex;
+    flex-flow: row wrap;
     .metric {
       padding: 45px $grid-gutter-width;
       border-top: 1px solid $border-color;
@@ -24,6 +35,11 @@
       justify-content: center;
       text-align: center;
       font-family: $font-family-sans-serif;
+      flex-flow: row wrap;
+      @include media-breakpoint-down(sm) {
+        padding: $grid-gutter-width 15px;
+        border-right: 0 !important;
+      }
       &:not(:last-child) {
         border-right: 1px solid $border-color;
       }
@@ -34,15 +50,28 @@
         font-weight: 700;
         color: $blue-highlight;
         line-height: 1;
+        text-align: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        @include media-breakpoint-down(sm) {
+          font-size: $font-size-24;
+          margin: 0 0 15px;
+        }
         small {
           font-size: $font-size-16;
           font-weight: 500;
           margin: 2px 0 0;
           text-align: left;
           line-height: 1;
+          @include media-breakpoint-down(sm) {
+            font-size: $font-size-13;
+            margin: 0;
+          }
         }
         .value-group {
           display: flex;
+          text-align: center;
+
           & + .value-group {
             &:before {
               content: '/';

@@ -2,6 +2,11 @@
   background: $gray-dark;
   color: $white;
   padding: 40px 0;
+  .footer-column {
+    @include media-breakpoint-down(md) {
+      margin: 0 0 $grid-gutter-width;
+    }
+  }
   .footer-message {
     .site-logo {
       height: 74px;
@@ -14,6 +19,30 @@
       display: block;
       letter-spacing: .1px;
     }
+    .privacy {
+      font-size: 12px;
+      font-family: $font-family-sans-serif;
+      a {
+        font-weight: 500;
+        color: $primary-inverted;
+      }
+    }
+  }
+  .footer-office {
+
+  }
+  .footer-contact {
+    @include media-breakpoint-down(md) {
+      margin: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 $grid-gutter-width;
+    }
+  }
+  .footer-newsletter {
+    @include media-breakpoint-down(md) {
+      margin: 0;
+    }
   }
   h4 {
     color: $white;
@@ -22,6 +51,9 @@
     font-size: $font-size-15;
     text-transform: uppercase;
     letter-spacing: 1px;
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 10px;
+    }
   }
   .contact-link {
     color: $white;
