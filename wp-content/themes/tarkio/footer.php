@@ -1,5 +1,5 @@
 <?php
-  $phone = get_field('phone_number', 'option');
+  $phone = get_field('advisor_phone_number', 'option');
   $phone_unformatted = preg_replace('/\D+/', '', $phone);
 ?>
 
