@@ -7,8 +7,10 @@
   }
   .text-wrapper {
     display: flex;
-    flex-flow: row wrap;
     padding: $grid-gutter-width;
+    @include media-breakpoint-down(sm) {
+      flex-flow: row wrap;
+    }
     p:last-child {
       margin: 0;
     }
