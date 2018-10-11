@@ -2,6 +2,16 @@
 <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" <?php language_attributes(); ?>>
   <head <?php do_action( 'add_head_attributes' ); ?>>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96122061-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-96122061-2');
+    </script>
+
     <!-- Title -->
     <!-- =================================== -->
     <title><?php wp_title(''); ?></title>
