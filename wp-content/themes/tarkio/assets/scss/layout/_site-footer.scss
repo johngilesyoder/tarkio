@@ -24,7 +24,8 @@
       font-family: $font-family-sans-serif;
       a {
         font-weight: 500;
-        color: $primary-inverted;
+        color: $white;
+        text-decoration: underline;
       }
     }
   }
