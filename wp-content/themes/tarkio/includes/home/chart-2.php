@@ -3,25 +3,40 @@
   <div id="legendTwo" class="legend"></div>
 </div>
 
-<div class="chart-wrapper">
+<div class="chart-wrapper chart-2">
   <canvas id="chartTwo" width="400" height="400"></canvas>
   <script>
     var ctx = document.getElementById("chartTwo").getContext('2d');
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["Oct '13", "Mar '14", "Aug '14", "Jan '15", "Jun '15", "Nov '15", "Apr '16", "Sep '16", "Feb '17", "Jul '17", "Dec '17", "May '18", "Oct '18"],
+        labels: [
+          <?php while( have_rows('five_year_growth') ): the_row(); ?>
+            <?php $date = get_sub_field('date'); ?>
+            "<?php echo $date; ?>",
+          <?php endwhile; ?>
+        ],
         datasets: [
           {
             label: 'Tarkio',
-            data: [10000, 10100, 10250, 10500, 10600, 10500, 10400, 10200, 10250, 10500, 10750, 11200, 11500],
+            data: [
+              <?php while( have_rows('five_year_growth') ): the_row(); ?>
+                <?php $tarkio_value = get_sub_field('tarkio_value'); ?>
+                <?php echo $tarkio_value; ?>,
+              <?php endwhile; ?>
+            ],
             backgroundColor: 'rgba(196,141,59, 0.2)',
             borderColor: 'rgba(196,141,59,1)',
             borderWidth: 3
           },
           {
             label: 'S&P 500',
-            data: [10000, 10000, 10400, 10450, 10500, 10200, 10000, 10500, 10550, 10500, 11000, 11250, 11250],
+            data: [
+              <?php while( have_rows('five_year_growth') ): the_row(); ?>
+                <?php $sp_value = get_sub_field('s&p_value'); ?>
+                <?php echo $sp_value; ?>,
+              <?php endwhile; ?>
+            ],
             backgroundColor: 'rgba(196,69,0, 0.2)',
             borderColor: 'rgba(196,69,0,1)',
             borderWidth: 3
@@ -43,7 +58,7 @@
             ticks: {
               //suggestedMin:7000,
               //suggestedMax: 15000,
-              stepSize: 500,
+              stepSize: 1000,
               fontColor: 'rgba(255,255,255,.7)',
               // Include a dollar sign in the ticks
               callback: function(value, index, values) {
