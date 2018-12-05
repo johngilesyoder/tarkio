@@ -9864,6 +9864,13 @@
 		"oAP": "/template-shareholder-info.php",
 		"oF": 0
 		},
+	"/template-shareholder-letters.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/template-shareholder-letters.php",
+		"oF": 0
+		},
 	"/template-sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
