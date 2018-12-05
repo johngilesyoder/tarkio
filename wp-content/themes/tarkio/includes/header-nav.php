@@ -5,7 +5,7 @@
         <img class="site-logo-mark" src="<?php echo get_template_directory_uri(); ?>/assets/img/site-logo-mark.jpg" alt="Tarkio Fund Logo">
         <div class="site-logo-type">
           <span class="company-name">Tarkio Fund</span>
-          <span class="company-managed">managed by <strong>Front Street Capital Management, Inc.</strong></span>
+          <span class="company-managed">managed by <strong>Front Street Capital Management<em>, Inc.</em></strong></span>
         </div>
       </a>
       <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,6 +16,7 @@
           <a class="nav-item nav-link" href="/risks/">Risks</a>
           <a class="nav-item nav-link" href="/how-to-invest/">Invest</a>
           <a class="nav-item nav-link" href="/shareholder-info/">Shareholder Info</a>
+          <a class="nav-item nav-link" href="/shareholder-letters/">Shareholder Letters</a>
           <a class="nav-item nav-link" href="/press/">Press</a>
           <a class="nav-item nav-link" href="/contact-us/">Contact Us</a>
         </div>

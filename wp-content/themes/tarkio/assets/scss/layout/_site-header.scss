@@ -55,6 +55,14 @@
       }
       .company-managed {
         font-size: $font-size-12;
+        em {
+          font-style: normal;
+        }
+        @include media-breakpoint-down(lg) {
+          em {
+            display: none;
+          }
+        }
         @include media-breakpoint-down(xs) {
           display: none;
         }
@@ -72,16 +80,18 @@
     .nav-link {
       font-size: $font-size-15;
       font-weight: 500;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 18px;
+      padding-right: 18px;
       color: $white;
       @include media-breakpoint-down(lg) {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-size: $font-size-14;
       }
       @include media-breakpoint-down(md) {
         padding-left: 0;
         padding-right: 0;
+        font-size: $font-size-16;
       }
       &:hover {
         color: $white;
