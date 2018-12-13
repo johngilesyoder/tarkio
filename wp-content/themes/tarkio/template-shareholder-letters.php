@@ -13,7 +13,7 @@
 					<div class="tab-content" id="myTabContent">
 
 						<div class="tab-pane show active fade" id="letters" role="tabpanel" aria-labelledby="letters-tab">
-							<?php while( have_rows('shareholder_document', 153) ): the_row();
+							<?php while( have_rows('shareholder_document', 189) ): the_row();
 								// vars
 								$title = get_sub_field('shareholder_document_title');
 								$description = get_sub_field('shareholder_document_description');

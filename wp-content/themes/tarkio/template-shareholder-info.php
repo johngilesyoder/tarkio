@@ -13,7 +13,7 @@
 					<i class="material-icons">info_outline</i>
 					<div>
 						<p>Current Shareholder Reports can also be found by leaving this site and going to the Securities & Exchange Commission's Edgar Website by clicking here</p>
-						<a href="#" target="_blank" class="btn btn-primary">Visit the SEC Edgar site<i class="material-icons">launch</i></a>
+						<a href="https://www.sec.gov/cgi-bin/browse-edgar?CIK=tarkx&owner=exclude&action=getcompany" target="_blank" class="btn btn-primary">Visit the SEC Edgar site<i class="material-icons">launch</i></a>
 					</div>
 				</div>
 				<div class="alert alert-warning">
