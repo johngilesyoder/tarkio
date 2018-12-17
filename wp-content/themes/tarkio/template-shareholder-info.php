@@ -22,7 +22,7 @@
 					<i class="material-icons">lightbulb_outline</i>
 					<div>
 						<p>The Risk/Return Summary information section of the Prospectus and any updated supplements to that section are available in XBRL format as required by the SEC's XBRL rules. These XBRL documents are intended for use in applications which support that format.</p>
-						<a href="<?php echo $file['url']; ?>" target="_blank" class="btn btn-primary">Download XBRL_2017.zip<i class="material-icons">file_download</i></a>
+						<a href="<?php echo $file['url']; ?>" target="_blank" class="btn btn-primary">Download XBRL<i class="material-icons">file_download</i></a>
 					</div>
 				</div>
 				<div class="shareholder-documents">
